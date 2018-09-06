@@ -9,8 +9,8 @@ class TsortableHash < Hash
   alias tsort_each_node each_key
 
   def tsort_each_child(node, &block)
-  	# node is the object 
-  	# block is the dependent objects
+    # node is the object 
+    # block is the dependent objects
     fetch(node).each(&block)
   end
 end
